@@ -1,6 +1,6 @@
 # AItheneum
 
-CHANGE
+A playground for study of and practice with all matters related with LLM's and Langchain.
 
 ## Installation
 

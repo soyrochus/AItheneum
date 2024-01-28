@@ -1,13 +1,16 @@
 [tool.poetry]
 name = "aitheneum"
 version = "0.1.0"
-description = "change"
+description = "A playground for study of and practice with all matters related with LLM's and Langchain"
 authors = ["Iwan van der Kleijn <iwanvanderkleijn@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+langchain = "^0.1.4"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.0.5"
 
 
 [build-system]
