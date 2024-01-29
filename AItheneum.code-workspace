@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../langchain/libs/langchain"
+		},
+		{
+			"path": "../langchain/libs/community"
 		}
 	],
 	"settings": {}

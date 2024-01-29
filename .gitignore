@@ -169,4 +169,5 @@ transcriptions/
 test-data/
 openai_api_key.env
 .env
-
+testdata/
+chroma_db/
