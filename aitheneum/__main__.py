@@ -11,5 +11,5 @@ if __name__ == "__main__":
     from aitheneum.openai_basic import haiku, haiku_spanish 
     from aitheneum.pipe_example import pipe_example
     
-    #haiku_spanish()
-    pipe_example()
+    haiku_spanish()
+    #pipe_example()

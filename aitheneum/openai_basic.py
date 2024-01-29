@@ -8,6 +8,11 @@ AITheneum - A playground for study of and practice with all matters related with
 import os
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from aitheneum.haiku_parsers import HaikuOutputParser
+
+output_parser = StrOutputParser()
+haiku_parser = HaikuOutputParser()
 
 try:
         llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -32,7 +37,9 @@ def haiku_spanish():
         ("system", "You are a relentless translator from any language to Spanish"),
         ("user", "{input}")
         ])
-    chain = prompt_es | llm 
+    #chain = prompt_es | llm | output_parser
+    chain = prompt_es | llm | haiku_parser 
+    
     message = chain.invoke({"input": "write an haiku about the pleasure of using Python"})
-    print(message.content)
+    print(message)
 
