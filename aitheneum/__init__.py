@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AITheneum - A playground for study of and practice with all matters related with LLM's and Langchain"
+AITheneum - A playground for study of and practice with all matters related with LLM's and Langchain
 @copyright: Copyright © 2024 Iwan van der Kleijn
 @license: MIT
 """
