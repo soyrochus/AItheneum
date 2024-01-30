@@ -17,15 +17,21 @@ if __name__ == "__main__":
     from aitheneum.pipe_example import pipe_example
     from aitheneum.rag_example import load_pdf
     
-    #haiku_spanish()
+    print ("Hello from aitheneum")
+    print("Haiku:")
+    haiku()
+    print("Haiku in Spanish:")
+    haiku_spanish()
+    print("Pipe example:")
+    pipe_example()
     
-    #pipe_example()
+    print("RAG example, Retrieve:")
+    vectordb = load_pdf(Path("testdata/Forth_Primer.pdf"))
+    query = "What is DO...LOOP in Forth?"
+    results = vectordb.similarity_search(query)
+    print(results)
     
-    #vectordb = load_pdf(Path("testdata/Forth_Primer.pdf"))
-    #query = "What is DO...LOOP in Forth?"
-    #results = vectordb.similarity_search(query)
-    #print(results)
-    
+    print("RAG example, Answer:")
     query = "What is DO...LOOP in Forth?"
     result = ask_about_forth(query)
     print(result)
